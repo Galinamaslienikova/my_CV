@@ -1,0 +1,255 @@
+@media (min-width: 1280px){
+    .container{
+        position: relative;
+        #modal{
+            width: 1280px;
+            padding: 0 0 0 15%;
+        }
+    
+        .orangeSquare{
+            position: absolute;
+            display: flex;
+            width: 80px;
+            height: 250px;
+            background-color: $colorAdd;
+            left:1150px;
+        }
+        a{
+            text-decoration: none;
+            &:hover{
+                font-weight: 800;
+                cursor: pointer;
+            }
+        }
+        font-size: 20px;;
+        max-width:1280px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
+        header{
+            grid-template-rows: 1fr 0.5fr 0.5fr;
+          
+            .hello{
+                align-self:start;
+                h1{
+                    font-size: 50px;
+                }
+                .name{
+                    span{
+                        padding-left: 40px;
+                    }
+                }
+            }
+            .contacts{
+                align-self:start;
+                width: 90%;
+                margin: 0 0 0 0;
+                justify-self: right;
+                grid-column: 1/1;
+                grid-row: 3/4;
+                
+                h3{
+                    margin: 20px 0 0 20px;
+                    font-size: x-large;
+                   
+                }
+                .phone,.email{
+                    display: flex;
+                    flex-direction: column; 
+                }
+                .phone{
+                    p{
+                        margin: 5px 0 15px 20px;
+                    } 
+                }
+                .email{
+                    h3{
+                        margin: 0 0 0 20px;
+                    }
+                    p{
+                        margin: 5px 0 20px 20px;
+                    } 
+                }
+            }
+        }
+        
+            
+        
+        .SkLg{
+            align-self: start;
+            grid-row: 2/3;
+            grid-column: 1/2;
+            width: 75%;
+            margin: 0 auto;
+            .skills{
+                margin: 0 auto;
+                max-width: 100%;
+                width: 100%;
+                h3{
+                    margin-top: 0;
+                    border-bottom: none;
+                    margin-bottom: 25px;
+                }  
+                .skillsList{
+                    margin-bottom: 57px;
+                    .scillsClass{
+                        width: 140px;
+                        height: 15px;
+                    }
+                }
+               
+            }
+            .languages{
+                max-width: 100%;
+                margin: 0 auto;
+                h3{
+                    margin-top:0;
+                    margin-bottom: 15px;;
+                }
+                div{
+                    width:100px;
+                    height: 100px;
+                    p{
+                        transform: rotate(-45deg); 
+                        margin-right:5px;
+                        &:last-child{
+                            text-align: end;
+                        }
+                    }
+                }
+                .english{
+                  p{
+                      padding-right: 14px;
+                  }
+                }
+                .polish{
+                    p:last-child{
+                        padding-right: 14px;
+                    }
+                }
+                .ukrainian{
+                    p:last-child{
+                        padding-right: 14px;
+                    }
+                    
+                }
+            }
+        }
+        .aboutMe{
+            margin:0 0 0 20px;
+            .paddingsInside{
+                padding-left: 25px;
+            }
+            .borderClass{
+                border-bottom: 2px solid $colorAdd;
+                padding-right: 25px;
+                font-size: x-large;
+            }
+            article{
+                h3{
+                   padding-left: 0;
+                   border:none;
+                }
+            }
+            margin-top: 30px;
+            padding-top: 55px;
+            padding-left: 0;
+            border-left:2px solid $colorAdd ;
+            grid-row: 1/3;
+            grid-column: 2/4;
+            max-width: 80%;
+            display:grid;
+            grid-template-rows: 0,5fr 2fr 2fr 2fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            .target{
+                p{
+                    margin-top: 25px;
+                }
+                grid-column: 1/3;
+                grid-row: 1/1;
+            }
+            .work{
+                
+                grid-column: 1/3;
+                grid-row: 4/5;
+            }
+            .education{
+                grid-column: 1/3;
+                grid-row: 2/3; 
+                border-left:none;
+                display:grid;
+                grid-column:1fr 1fr;
+                grid-row:1fr 3fr 3fr;
+                h3{
+                    grid-column: 1/3;
+                    grid-row: 1/1;
+                }
+                div:nth-of-type(1){
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+                div:nth-of-type(2){
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                }
+                div:nth-of-type(4){
+                    grid-column: 1/2;
+                    grid-row: 3/4;
+                }
+            }
+            
+            .certificats{
+                
+                grid-column: 1/3;
+                grid-row: 3/4;
+            
+                .certificatsCont{
+                    padding:0 5% 0 5%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    div{
+                    width: 40%;
+                    &:hover{
+                        cursor: pointer;
+                        width: 42%;
+                    }
+                    }
+                }
+                
+            
+            }
+            .projects{
+               
+                grid-column: 1/3;
+                grid-row: 5/6;
+            }
+            .hobbies{
+              
+                border-left:none ;
+                grid-row: 6/7;
+                grid-column: 1/3;
+            }
+        
+        }
+        footer{
+            grid-column: 1/3;
+            display: flex;
+            background-color: $colorAdd;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 25% 0 25%;
+           div{
+               display: flex;
+               flex-direction: row;
+               justify-content: flex-start;
+               .liksFooter{
+                   line-height: 37px;
+               }
+               
+           }
+        }
+    }
+   
+}

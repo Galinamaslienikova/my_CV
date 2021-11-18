@@ -1,0 +1,74 @@
+@media(min-width: 768px){
+    .container{
+        #modal{
+           width: 1024px;
+            padding: 10% 0 0 10%;
+        }
+        max-width: 768px;
+        .SkLg{
+            .languages{
+                .english{
+                    grid-column: 1/3;
+                    grid-row: 2/2;
+                }
+                .polish{
+                    grid-column: 3/5;
+                    grid-row: 2/2;
+                    p{
+                        margin-left: 5px;
+                    }
+                }
+                .ukrainian{
+                    grid-column: 2/4;
+                    grid-row: 2/2;
+                    
+                }
+            }
+        }
+        .aboutMe{
+          display:grid;
+          grid-template-rows: 0.5fr 2fr 2fr 1fr;
+          grid-template-columns: 1fr 1fr;
+          .target{
+            grid-column: 1/2 ;
+            grid-row: 1/1;
+          }
+          .work{
+            grid-column: 1/2 ;
+            grid-row: 2/2;
+          }
+          .education{
+            grid-column: 2/3 ;
+            grid-row: 1/3; 
+            border-left: 2px solid $colorAdd ;
+          }
+          
+            .certificats{
+                grid-column: 1/3 ;
+                grid-row: 3/3;
+               
+                .certificatsCont{
+                    padding:0 5% 0 5%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    div{
+                       width: 40%;
+                    }
+                }
+                
+            
+          }
+            .projects{
+                grid-column: 1/2 ;
+                grid-row: 4/4;
+            }
+            .hobbies{
+                grid-column: 2/3 ;
+                grid-row: 4/4;
+                border-left: 2px solid $colorAdd ;
+            }
+        }
+    }
+}
